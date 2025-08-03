@@ -1,3 +1,5 @@
 requests
 dnspython
 rich
+cloudscraper
+base64
