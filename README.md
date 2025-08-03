@@ -33,4 +33,4 @@ pkg update && pkg install python git -y
 pip install requests dnspython
 git clone https://github.com/yourrepo/redzsubhunter.git
 cd redzsubhunter
-python redzhunter.py -d target.com
+python redzhunter.py -d target.com -o hasil.txt
