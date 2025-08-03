@@ -1,0 +1,154 @@
+inurl:/admin
+intitle:"Admin Login"
+inurl:admin/login
+filetype:sql "INSERT INTO"
+ext:sql site:*.go.id
+inurl:backup.sql
+ext:env
+ext:conf
+inurl:.git
+intitle:"index of" config
+site:*.go.id inurl:".gitlab-ci.yml" OR inurl:"jenkinsfile"
+site:*.go.id intitle:"Jenkins" "Build Executor Status"
+site:*.go.id "build failed" "npm ERR!" | "yarn build error"
+site:*.go.id "upload file" OR "choose file" ext:php | ext:asp | ext:jsp
+site:*.go.id inurl:"shell.php" | inurl:"cmd.php"
+site:*.go.id intext:"PHP Shell" | intext:"webshell"
+site:*.go.id inurl:"/admin" | inurl:"/dashboard" | inurl:"/panel"
+site:*.go.id intitle:"AdminLTE" OR intitle:"Login Admin"
+site:*.go.id inurl:"/debug/" OR inurl:"/logs"
+site:*.go.id intitle:"Index of" "src" | "source" | "app"
+site:*.go.id "index of" "/.vscode" | "/.idea" | "/node_modules"
+site:*.go.id ext:py | ext:php | ext:js | ext:rb
+site:*.go.id "Whoops, looks like something went wrong."  
+site:*.go.id "Whitelabel Error Page"
+site:*.go.id "ReferenceError:" | "SyntaxError:" | "TypeError:"
+site:*.go.id ext:conf | ext:ini | ext:yaml | ext:json "password" OR "secret"
+site:*.go.id intitle:"index of" "credentials" OR "secrets"
+site:*.go.id ext:conf | ext:ini | ext:yaml | ext:json "password" OR "secret"
+site:*.go.id intitle:"index of" "credentials" OR "secrets"
+site:*.go.id inurl:.git OR inurl:.svn OR inurl:.DS_Store OR inurl:.env
+site:*.go.id inurl:"?page=" | inurl:"?file=" | inurl:"?dir="
+site:*.go.id inurl:"?q=" | inurl:"?search=" | inurl:"?s=" "alert("
+site:*.go.id inurl:"?lang=" "parameter" "en"
+site:*.go.id inurl:":2082" | inurl:":2083" | inurl:":2095" | inurl:":2096"
+site:*.go.id inurl:"/phpinfo.php" OR inurl:"/info.php"
+site:*.go.id intitle:"index of" "backup" OR "db_backup" OR "sql"
+site:*.go.id ext:log | ext:env | ext:sql | ext:bak | ext:old -github
+site:*.go.id "Fatal error" | "Warning:" | "Parse error"
+site:*.go.id "Apache2 Ubuntu Default Page"
+site:*.go.id inurl:"/config" AND (ext:php | ext:json | ext:bak)
+site:*.go.id intext:"root@localhost" "password"
+site:*.go.id inurl:"/admin/" "login"
+site:*.go.id inurl:"/portal/" intitle:"Login"
+site:*.go.id inurl:"redirect=" OR inurl:"url=" OR inurl:"next="
+site:*.go.id inurl:"/storage/" intitle:"index of" filetype:pdf | docx
+site:go.id intitle:"index of"
+site:go.id ext:sql | ext:xml | ext:bak | ext:old
+site:go.id inurl:login
+site:go.id "admin panel"
+site:go.id "phpMyAdmin"
+site:go.id inurl:config
+site:go.id filetype:env
+site:go.id "Access denied for user"
+site:go.id inurl:wp-content
+inurl:/admin
+inurl:admin/login
+intitle:"Admin Panel"
+intitle:"Login Admin"
+inurl:/cpanel
+intitle:"Welcome to XAMPP"
+inurl:/phpmyadmin
+inurl:"/dashboard/login"
+inurl:/user/login
+site:*.go.id "Login Panel"
+filetype:sql "INSERT INTO"
+ext:sql site:*.go.id
+inurl:backup.sql
+intitle:"index of" db_backup
+inurl:config.php
+ext:env
+ext:bak
+ext:old
+inurl:.git
+inurl:.svn
+inurl:.htpasswd
+filetype:log
+filetype:conf
+filetype:json "password"
+filetype:ini "user"
+filetype:yaml "secret"
+intitle:"index of" "config"
+inurl:"/.env"
+inurl:"/.git/config"
+inurl:"/.DS_Store"
+intitle:"index of /src"
+intitle:"index of /code"
+filetype:txt "password"
+filetype:xml "admin"
+filetype:pdf site:*.go.id
+inurl:/storage/logs
+inurl:"/debug/"
+inurl:"/system/logs"
+"Fatal error" site:*.go.id
+"Warning: mysql_fetch" site:*.go.id
+inurl:"redirect=" site:*.go.id
+inurl:"lang=" site:*.go.id
+inurl:"module=" site:*.go.id
+"PHP Parse error" site:*.go.id
+"PHP Warning:" site:*.go.id
+site:*.go.id "index of /uploads"
+site:*.go.id "index of /files"
+intitle:"Jenkins" "Build Executor"
+filetype:log "admin login"
+inurl:login.php
+inurl:signin
+intitle:"Sign In"
+inurl:/admin/portal
+inurl:/wp-admin
+inurl:adminarea
+inurl:loginpanel
+intitle:"Restricted Area"
+inurl:private
+intitle:"Control Panel"
+intitle:"Access Manager"
+filetype:sql "password"
+filetype:sql "admin"
+filetype:xls "email"
+filetype:csv "username"
+filetype:xlsx "NIK"
+filetype:pdf "confidential"
+filetype:log site:*.go.id
+filetype:env "DB_PASSWORD"
+filetype:bak site:*.go.id
+inurl:"config/database.php"
+inurl:"core/config.php"
+intitle:"index of" /backup
+intitle:"index of" /secret
+intitle:"index of" /dump
+intitle:"index of" /database
+intitle:"index of" /admin
+intitle:"index of" /pass
+intitle:"index of" /email
+intitle:"index of" /export
+intitle:"index of" /account
+ext:php intitle:"Notice:"
+ext:php intext:"Undefined index"
+"SQL syntax" "MySQL"
+intext:"mysql_connect()" ext:php
+inurl:"/upload"
+inurl:"/uploads/"
+intitle:"upload file"
+"Index of /shell"
+inurl:"shell.php"
+intext:"web shell by"
+intitle:"Index of" "shell"
+"Powered by phpMyAdmin"
+"phpMyAdmin - Error"
+intitle:"phpinfo()" "PHP Version"
+intext:"phpinfo()" filetype:php
+intitle:"index of /htdocs"
+inurl:/xampp/
+inurl:/xampp/phpmyadmin
+"Apache2 Ubuntu Default Page"
+"XAMPP Apache" inurl:/dashboard
